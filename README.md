@@ -2,6 +2,12 @@
 
 ## PHP Movies
 
+### Setup
+- Simply run /vendor/bin/sail up -d to start the application
+- Access it at `http://localhost`
+- All `artisan` commands can be run with `./vendor/bin/sail artisan <command>`
+- See [the Laravel docs](https://laravel.com/docs/10.x) to see how to create controllers, models, etc with artisan commands
+
 ### Requirements
 Styling of any HTML created is not required, but feel free to do so if you'd like.
 
