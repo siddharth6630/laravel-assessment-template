@@ -1,3 +1,5 @@
+<!-- actors/index.blade.php -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,5 +15,18 @@
             <li><a href="{{ route('search-people')}}">The Star Wars Search</a></li>
         </ul>
     </nav>
+
+    <ul>
+        @foreach($actors as $actor)
+            <li>
+                {{ $actor->actor_name }}:
+                <ul>
+                    @foreach($actor->movies as $movie)
+                        <li>{{ $movie->movie_name }}</li>
+                    @endforeach
+                </ul>
+            </li>
+        @endforeach
+    </ul>
 </body>
 </html>
